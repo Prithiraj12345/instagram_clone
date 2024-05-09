@@ -45,6 +45,23 @@
             </div>
         </div>
     </div>
+    <!-- Dark mode button -->
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </div>
+
+    <!-- Your existing HTML content -->
+
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+            } else {
+                body.classList.add('dark-mode');
+            }
+        }
+    </script>
     <div class="wrap">
         <!-- storys -->
         <div class="story" id="story">
